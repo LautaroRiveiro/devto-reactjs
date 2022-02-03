@@ -8,7 +8,7 @@ const Preview = () => {
   }
 
   return (
-    <article className="preview">
+    <article className="card preview">
       <header>
         {/* TODO: limitar a 100 palabras */}
         <h3>Title</h3>

@@ -63,3 +63,15 @@ ul {
     background-color: var(--main-theme-darker);
   }
 }
+
+.card {
+  background-color: var(--main-0);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-right: 4px solid var(--main-theme);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  // height: max-content;
+}

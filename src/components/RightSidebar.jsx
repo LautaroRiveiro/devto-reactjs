@@ -11,7 +11,7 @@ const RightSidebar = () => {
         <Preview />
       ) : (
         <>
-          <div className="right-sidebar-info-1">
+          <div className="card right-sidebar-info-1">
             <p>
               <img src="https://picsum.photos/300/300" alt="info-1 cover" />
             </p>
@@ -24,7 +24,7 @@ const RightSidebar = () => {
             </p>
           </div>
 
-          <div className="right-sidebar-info-2">
+          <div className="card right-sidebar-info-2">
             <header>
               <h3>Title</h3>
               <a href="/">See all</a>
