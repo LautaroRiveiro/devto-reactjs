@@ -1,3 +1,4 @@
+import './App.scss'
 import { FaBeer } from 'react-icons/fa'
 
 const App = () => {
