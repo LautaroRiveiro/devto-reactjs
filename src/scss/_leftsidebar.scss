@@ -1,0 +1,43 @@
+.left-sidebar {
+
+  & nav {
+    & ul li a {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      gap: 0.5rem;
+
+      &:hover {
+        background-color: var(--main-a);
+        color: var(--main-theme-darker);
+        border-radius: var(--border-radius);
+      }
+
+      & i {
+        font-size: 1.25rem;
+      }
+    }
+
+    & .more a {
+      font-size: 0.75rem;
+      padding-left: 2rem;
+    }
+  }
+
+  &-social {
+    display: flex;
+    gap: 0.45rem;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    & i {
+      font-size: 1.3rem;
+      color: var(--main-6);
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--main-theme);
+      }
+    }
+  }
+}
