@@ -1,7 +1,9 @@
+import { FaBeer } from 'react-icons/fa'
+
 const App = () => {
   return (
     <h1>
-      Dev.to clone
+      Dev.to clone <FaBeer />
     </h1>
   )
 }
