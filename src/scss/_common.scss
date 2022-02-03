@@ -15,10 +15,16 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+}
+
+.main-container {
+  height: calc(100vh - var(--navigation-height));
+  padding: 1rem 4rem;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
 }

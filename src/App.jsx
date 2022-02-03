@@ -1,11 +1,19 @@
 import './App.scss'
-import { FaBeer } from 'react-icons/fa'
+import Navigation from "./components/Navigation"
+import Content from "./components/Content"
+import LeftSidebar from "./components/LeftSidebar"
+import RightSidebar from "./components/RightSidebar"
 
 const App = () => {
   return (
-    <h1>
-      Dev.to clone <FaBeer />
-    </h1>
+    <>
+      <Navigation />
+      <main className="main-container">
+        <LeftSidebar />
+        <Content />
+        <RightSidebar />
+      </main>
+    </>
   )
 }
 
