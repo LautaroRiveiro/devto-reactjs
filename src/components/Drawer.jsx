@@ -1,6 +1,6 @@
 import { GrFormClose } from "react-icons/gr"
 
-const Drawer = ({close, children}) => {
+const Drawer = ({title, close, children}) => {
 
   const stopPropagation = (e)=>{
     e.stopPropagation()
@@ -10,11 +10,12 @@ const Drawer = ({close, children}) => {
     <div className="drawer" onClick={close}>
       <div className="drawer-container" onClick={stopPropagation}>
         <div className="drawer-content">
-          <span className="drawer-close" onClick={close}>
-            <i>
+          <header className="drawer-header">
+            <h2>{title}</h2>
+            <button className="drawer-close" onClick={close}>
               <GrFormClose />
-            </i>
-          </span>
+            </button>
+          </header>
           {children}
         </div>
       </div>
