@@ -1,5 +1,4 @@
 .left-sidebar {
-
   & nav {
     & ul li a {
       display: flex;
@@ -39,5 +38,14 @@
         color: var(--main-theme);
       }
     }
+  }
+}
+
+.drawer-opener {
+  display: none;
+  width: 100%;
+
+  button {
+    width: 100%;
   }
 }

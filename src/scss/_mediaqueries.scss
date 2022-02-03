@@ -1,5 +1,20 @@
 // Hasta md
 @media only screen and (max-width: 768px) {
+  .main-container {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .left-sidebar {
+    display: none;
+  }
+
+  .drawer-opener {
+    display: block;
+    text-align: center;
+  }
+  
   .header {
     &-logo span {
       display: none;
@@ -12,7 +27,7 @@
 
   .drawer {
     &-container {
-      display: block;
+      width: 100%;
     }
   }
 
