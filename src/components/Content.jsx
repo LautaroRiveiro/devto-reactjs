@@ -1,18 +1,13 @@
 import { useEffect, useState } from "react"
+import { useQuery } from "react-query"
 import ListItem from "./ListItem"
 
 const Content = () => {
 
-  const [adverts, setAdverts] = useState(null)
-
-  useEffect(() => {
-    setTimeout(async () =>{
-      const res = await fetch('https://dev.to/api/articles')
-      const data = await res.json()
-      console.log({data})
-      setAdverts(data)
-    }, 2000)
-  }, [])
+  const getAdverts = () => {
+    return fetch('https://dev.to/api/articles').then(response => response.json())
+  }
+  const { data: adverts, isFetching } = useQuery('adverts', getAdverts)
 
   return (
     <div className="content">
@@ -25,9 +20,10 @@ const Content = () => {
         </nav>
       </header>
       <main>
-        {adverts?.map((advert)=>(
-          <ListItem key={advert.id} data={advert} />
-        ))}
+        {isFetching ? "Cargando..."
+          : adverts && adverts.map((advert) => (
+            <ListItem key={advert.id} data={advert} />
+          ))}
       </main>
     </div>
   )
