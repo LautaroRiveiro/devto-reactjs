@@ -9,13 +9,13 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <main className="main-container">
+      <div className="app-container">
         <LeftSidebar>
           <NavMenu />
         </LeftSidebar>
         <Content />
         <RightSidebar />
-      </main>
+      </div>
     </>
   )
 }

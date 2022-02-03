@@ -1,6 +1,6 @@
 // Hasta lg
 @media only screen and (max-width: 992px) {
-  .main-container {
+  .app-container {
     grid-template-columns: 1fr 3fr;
   }
 
@@ -11,7 +11,7 @@
 
 // Hasta md
 @media only screen and (max-width: 768px) {
-  .main-container {
+  .app-container {
     padding: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
