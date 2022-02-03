@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="header-right">
           {isLogged
             ? <>
-              <button>Publicá gratis</button>
+              <button className="btn">Publicá gratis</button>
               <i>
                 <FaRegBell />
               </i>
@@ -29,7 +29,7 @@ const Navigation = () => {
               </span>
             </>
             : <>
-              <button>Publicá gratis</button>
+              <button className="btn">Publicá gratis</button>
               <a href="/register">Ingresar</a>
             </>
           }

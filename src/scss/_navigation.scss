@@ -28,18 +28,6 @@
     align-items: center;
     gap: 0.75rem;
 
-    button {
-      background-color: var(--main-theme);
-      color: var(--main-0);
-      padding: 0.5rem 1rem;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-
-      &:hover {
-        background-color: var(--main-theme-darker);
-      }
-    }
-
     i {
       margin: 0 1rem;
       font-size: 1.4rem;

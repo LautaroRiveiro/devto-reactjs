@@ -51,3 +51,15 @@ ul {
   grid-template-columns: 1fr 2fr 1fr;
   gap: 1rem;
 }
+
+.btn {
+  background-color: var(--main-theme);
+  color: var(--main-0);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--main-theme-darker);
+  }
+}
