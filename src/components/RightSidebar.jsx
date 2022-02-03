@@ -1,6 +1,18 @@
+import Preview from "./Preview";
+
 const RightSidebar = () => {
+
+  // TODO: Remove
+  const current = {};
+
   return (
-    <h1>RightSidebar</h1>
+    <aside className="right-sidebar">
+      {current ? (
+        <Preview />
+      ): (
+        <h1>Info</h1>
+        )}
+    </aside>
   )
 }
 export default RightSidebar
