@@ -20,6 +20,29 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+  border-style: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .main-container {
   height: calc(100vh - var(--navigation-height));
   padding: 1rem 4rem;
