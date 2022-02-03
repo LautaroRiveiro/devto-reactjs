@@ -31,7 +31,7 @@
       background-color: var(--main-theme);
       color: var(--navigation-background);
       padding: 0.5rem 1rem;
-      border-radius: 5px;
+      border-radius: var(--border-radius);
       transition: var(--transition);
 
       &:hover {
