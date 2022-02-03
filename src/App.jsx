@@ -1,11 +1,19 @@
+import { useState } from 'react'
 import './App.scss'
-import Navigation from "./components/Navigation"
 import Content from "./components/Content"
+import Drawer from './components/Drawer'
 import LeftSidebar from "./components/LeftSidebar"
-import RightSidebar from "./components/RightSidebar"
+import Navigation from "./components/Navigation"
 import NavMenu from './components/NavMenu'
+import RightSidebar from "./components/RightSidebar"
 
 const App = () => {
+
+  const [showDrawer, setShowDrawer] = useState(false)
+  const toggle = () => {
+    setShowDrawer(!showDrawer)
+  }
+
   return (
     <>
       <Navigation />
@@ -16,6 +24,11 @@ const App = () => {
         <Content />
         <RightSidebar />
       </main>
+      {showDrawer && (
+        <Drawer close={toggle}>
+          <NavMenu />
+        </Drawer>
+      )}
     </>
   )
 }

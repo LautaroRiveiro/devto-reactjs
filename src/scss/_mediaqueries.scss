@@ -9,6 +9,13 @@
 
 // Hasta sm
 @media only screen and (max-width: 576px) {
+
+  .drawer {
+    &-container {
+      display: block;
+    }
+  }
+
   .header {
     padding: 1rem 2rem;
 
