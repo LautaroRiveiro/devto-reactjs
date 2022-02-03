@@ -1,0 +1,27 @@
+// Hasta md
+@media only screen and (max-width: 768px) {
+  .header {
+    &-logo span {
+      display: none;
+    }
+  }
+}
+
+// Hasta sm
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+
+    &-right {
+      gap: 0.5rem;
+    }
+
+    &-dropdown-menu {
+      left: 0;
+
+      & li {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
