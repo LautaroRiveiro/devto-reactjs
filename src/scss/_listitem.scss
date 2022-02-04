@@ -6,7 +6,9 @@
   transition: var(--transition);
 
   &:hover {
-    box-shadow: 0px 0px 10px var(--main-a);
+    box-shadow: 1px 0px 10px var(--main-a);
+    transform: translateY(1px);
+    filter: brightness(101%);
   }
 
   &::before {
@@ -14,7 +16,7 @@
     position: absolute;
     width: 4px;
     height: 0%;
-    background-color: var(--text-color);
+    background-color: var(--main-theme-darker);
     top: 50%;
     transform: translateY(-50%);
     right: -4px;
