@@ -8,6 +8,7 @@
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
+
     nav {
       display: flex;
       justify-content: flex-end;
@@ -15,7 +16,38 @@
 
       button {
         font-size: 0.75rem;
+        padding: 0.25rem;
+        border-radius: var(--border-radius);
+        position: relative;
+
+        &:hover {
+          background-color: var(--main-a);
+          color: var(--text-color);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          background-color: var(--text-color);
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: var(--border-radius);
+          margin: 0 0.5rem;
+          transition: var(--transition);
+        }
+
+        &:hover::after {
+          margin: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
       }
+    }
+
+    select {
+      display: none;
     }
   }
 

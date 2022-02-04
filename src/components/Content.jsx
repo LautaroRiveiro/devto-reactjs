@@ -14,10 +14,16 @@ const Content = () => {
       <header>
         <h1>Se encontraron 4 resultados</h1>
         <nav>
-          <button className="btn">Últimos</button>
-          <button className="btn">Tendencias</button>
-          <button className="btn">Promocionales</button>
+          <button>Últimos</button>
+          <button>Tendencias</button>
+          <button>Promocionales</button>
         </nav>
+        {/* TODO: Mover al dropdown */}
+        <select className="content-dropdown">
+          <option value="last">Últimos</option>
+          <option value="trends">Tendencias</option>
+          <option value="promos">Promocionales</option>
+        </select>
       </header>
       <main>
         {isFetching ? "Cargando..."

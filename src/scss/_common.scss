@@ -35,8 +35,18 @@ button {
   padding: 0;
 }
 
-input {
+input, select {
+  background-color: var(--main-0);
+  color: var(--text-color);
   outline: none;
+  border: 1px solid var(--main-3);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  font-size: 1rem;
+
+  &:focus {
+    border: 1px solid var(--main-theme)
+  }
 }
 
 ul {
